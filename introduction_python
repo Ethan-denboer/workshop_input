@@ -14,42 +14,75 @@ kernelspec:
 ---
 
 # Lesson 1: Introduction to Python and Jupyter Notebooks
+This lesson will give a short introduction on how to work with Notebooks in combination with Python.
+Within the lesson explanation and assignments are given. To get the most of this lesson it is best to manually type the code into your Jupyter Notebook instead of copy-pasting.
 
-To add: how to open a Jupyter Notebook with a screenshot of how it looks. 
+## Notebooks
+First, lets start up Jupyter and open a notebook.
+In the searchbox, type 'jupyter' and open *jupyter notebook*.
+This should open a tab in your browser with the jupyter hub in the installation folder. 
+This folder will act as your home folder for jupyter.
+All notebooks you make will be stored here unless explicitely saved elsewhere or moved.
+
+To open a new python jupyter notebook click the **new** button in the topright corner and select **python3** from the drowdown list.
+A new tab should open dispaying your new Notebook, usually called *Untitled*
+
+Lets rename the Notebook to something a bit more recognizable. Rename the notebook by clicking on the name and typing a better name, such as 'Awesome XML workshop at DHBenelux'.
+
+**To add:** screenshots 
 
 A Notebook is not a static webpage, but an interactive enviroment. Within the blocks (cells) of a Notebook code can be written ánd executed.
-
-This Notebook will give a short introduction on how to work with Notebook in combination with Python.
 
 ## How does a Notebook work?
 
 ### Different cells
 
-Notebooks are comprimised of different types of cells. The cell containing this text is a *textcel*. Text cells are generally used for descriptions and explantions. 
+Notebooks are comprimised of different types of cells. 
+The main cell types are *text cells* and *code cells*.
+
+Text cells are generally used for descriptions and explantions. These cells are inactive and code written in these cells cannot be executed.
 
 The layout is managed through *markdown* (see [markdown syntax](https://www.markdownguide.org/basic-syntax/) for more information).
 
-The second main type of cell is the code cell. Such as teh example below:
+The second main type of cell is the code cell. 
+Code cells are used to write and execute code. In our case Python. When a code cell is run, Python will execute the code in the cell.
+
+Code cells are recognizable by the 'In [ ]:' to the left of the cell.
+
+The type of a cell can be changed by selecting a cell and either going through the menu (Cell/Cell Type/<option>) or by selecting a cell and pressing either **Y** for a code cell or **M** for a text cell.
+
+**ADD printscreen menu celltype**
+
+```{admonition} Exercise
+:class: attention
+Select a cell in the Notebook and change the type by using the hotkeys or the menu. What type of cell did the cell start out as?
+```
 
 
-```{code-cell}
+### Running cells
+There are multiple ways to run a cell:
+* By clicking the 'Run' button in the taskbar;
+* By pressing 'shift + enter when the cell is selected (green frame)'
+	*Note that this will add a new cell below the cell that was run.*
+The moment a cell generates *output* the output is displayed beneath the cell, keeping code and output together.
+
+```{admonition} Exercise 
+:class: attention
+Type the code below in a cell in your Notebook and run the cell.
+```
+
+```{code-cell} 
+
 2*8
 ```
 
-Code cells are used to write and execute code. In our case Python. When a code cell is run, Python will execute the code in the cell.
-
-There are multiple ways to run a cell:
-* By clicking the 'Run' button bovenaan te klikken;
-* By pressing 'shift + enter when the cell is selected (green frame)'
-
-The moment a cell generates *output* the output is displayed beneath the cell, keeping code and output together.
-
-**Assignment:** run the code cell above and look at the output.
+```{note}
+When the code does not give output after running it, check the cell type!
+```
 
 ### Comments
 
 Comments can be added to a code cell. Comments can be used to describe what a piece of code does, or can be used to tell where values can be changed. 
-
 
 ```{code-cell} 
 
@@ -58,8 +91,10 @@ Comments can be added to a code cell. Comments can be used to describe what a pi
 
 The moment a # is typed in a code cell, everything after it will be regarded as a comment. Lines that have been marked as a comment will **not** be executed by Python when the cell is run.
 
-**Assignment:** run the cell below. Does Python return output?
-
+```{admonition} Exercise 
+:class: attention
+Type the code below in a cell in your Notebook and run the cell. Does Python return output?
+```
 
 ```{code-cell} 
 
@@ -69,12 +104,15 @@ The moment a # is typed in a code cell, everything after it will be regarded as 
 
 When the **#** is removed and the cell is run again, Python wil recognize the code and execute it.
 
-**Assignment:** Ensure that Python executes the code and run the cell again.
+```{admonition} Exercise
+:class: attention
+Ensure that Python executes the code and run the cell again.
+```
 
 ## Python
 
 Below will follow a short introduction of Python. 
-Python was developed in 1991 by Guido van Rossum. The purpose of Python was to create a programming language that is both simple to understand and readable.  Python is open source, and can be used for free.
+Python was developed in 1991 by Guido van Rossum. The purpose of Python was to create a programming language that is both simple to understand and readable. Python is open source, and can be used for free.
 
 ### Input en variables
 
@@ -90,7 +128,7 @@ The command *type()* can be used to determine what type of input a variable cont
 *int* indicates a variable contains an integer, or whole number
 *str* indicates a variable contains a string, a piece of text. 
 
-**Assignment** Run the cell below
+**Assignment** Type the code below in a cell in your Notebook and run the cell.
 
 
 ```{code-cell} 
@@ -114,8 +152,10 @@ type(text)
 
 **Important!** If you input a number *with* quotation marks Python will see it as text!
 
-**Assignment:** Run the cell below
-
+```{admonition} Exercise 
+:class: attention
+Type the code below in a cell in your Notebook and run the cell.
+```
 
 ```{code-cell} 
 
@@ -131,8 +171,10 @@ type(number_but_wrong)
 
 As mentioned above it is possible to use previously assigned variables in your code. 
 
-**Assignment:** Run the cell below
-
+```{admonition} Exercise
+:class: attention
+ Type the code below in a cell in your Notebook and run the cell.
+```
 
 ```{code-cell} 
 
@@ -143,16 +185,16 @@ number_1 + number_2
 ```
 
 
-**Assignment:** Using Python, calculate the sum of "35 + 69" in teh cell below. Start with making two variables to assign the numbers *35* and *69* to. Calculate the sum using these variables.
-
+```{admonition} Exercise
+:class: attention
+Using Python, calculate the sum of "35 + 69" in the cell below. Start with making two variables to assign the numbers *35* and *69* to. Calculate the sum using these variables.
+```
 
 ```{code-cell} 
 
 # Make a variable for the number 35
 
-
 # Make a variable for the number 69
-
 
 # Calculate the sum using the variables
 
@@ -160,8 +202,10 @@ number_1 + number_2
 
 The plus sign can be used to calculate sums, as you did in the above assignment. However, the plus sign can also be used to stick two different texts together. 
 
-**Assignment:** run the cell below
-
+```{admonition} Exercise
+:class: attention
+Type the code below in a cell in your Notebook and run the cell.
+```
 
 ```{code-cell} 
 
@@ -172,8 +216,10 @@ line_1 + line_2
 ```
 
 
-**Assignment:** Ensure that the four lines below are printed as one sentence in the output.
-
+```{admonition} Exercise
+:class: attention
+Ensure that the four lines below are printed as one sentence in the output.
+```
 
 ```{code-cell} 
 
@@ -182,20 +228,20 @@ line_2 = "I now know "
 line_3 = "that programming with Python "
 line_4 = "is very fun!"
 
-# Stick the lines together
-
 ```
 
 ### Functions
 
-When you program in Python you will make use of functions. Apart from ready made functions from packages (see below) Python contains a lot of ready to use built-in functions. Saving us a lot of manual coding!
+When you program in Python you will make use of functions. Python contains a lot of built-in functions that are ready to use. Saving us a lot of manual coding!
 
 Functions need to be passed one or more parameters as input. The syntax of a function is as follows: *functionname(parameters)*. When there are multiple parameters these are seperated with a comma.
 
 You can find some examples below.
 
-**Assignment:** Run the cells below
-
+```{admonition} Exercise
+:class: attention
+Type the code below in a cell in your Notebook and run the cell
+```
 
 ```{code-cell} 
 
@@ -203,23 +249,20 @@ You can find some examples below.
 max(5, 8, 35, 4, 75, 2)
 ```
 
+```{admonition} Exercise
+:class: attention
+Round the number below using the round() function. The first parameter is the number to round. The second number is the required number of decimals. Type the code below in a cell in your Notebook and run the cell
+```
 
 ```{code-cell} 
 
-# Round a number using the round() function
-# The first parameter is the number to round
-# De second number is the required number of decimals. 
 round(36.53343, 2)
 ```
 
-
-**Assignment:** Calculate the *lowest* number using the function min(). This functions works similarly to the previously used max() function.
+```{admonition} Exercise
+:class: attention
+Calculate the *lowest* number using the function min(). This functions works similarly to the previously used max() function.
 Use the following numbers: 6, 24, 8, 2, 14. 
-
-
-```{code-cell} 
-
-# Use this cell to calculate the lowest number using the min() function.
 ```
 
 ### Packages
@@ -232,15 +275,16 @@ Afterwards the package needs to be *imported* into the Notebook. After importing
 
 Below you can find an example of installing, importing and using a package that measures the distances between two texts.
 
-**Assignment:** Run the cells below
-
+```{admonition} Exercise
+:class: attention
+Type the code below in a cell in your Notebook and run the cell
+```
 
 ```{code-cell} 
 
 # Install the package
 !pip install textdistance
 ```
-
 
 ```{code-cell} 
 
@@ -253,30 +297,30 @@ In the case of the package used below, there are multiple methods for the calcul
 
 Syntax: *packagename.option(parameters)*
 
-**Assignment:** Run the cell below
-
+```{admonition} Exercise
+:class: attention
+Type the code below in a cell in your Notebook and run the cell.
+```
 
 ```{code-cell} 
 
-## Make two variables wit ha line of text.
+# Make two variables with a line of text.
 text1 = "Lesser leather never weathered wetter weather better"
 text2 = "Lesser leather never weathered wethter weater better"
 
-## Calculate the difference using the hamming option
+# Calculate the difference using the hamming option
 textdistance.hamming(text1, text2)
 ```
 
 
-**Assignment:** Calculate the difference between texts using the levenshtein option.
-
-
-```{code-cell} 
-
-## Calculate the difference using the levenshtein option
-
+```{admonition} Exercise
+:class: attention
+Calculate the difference between texts using the levenshtein option.
 ```
 
-**Assignemnt:** For this assignment you will combine the previous steps to use the package 'passwordmeter'. You will use this package to measure the strength of three passwords, and determine how they can be improved.
+```{admonition} Exercise
+:class: attention
+For this assignment you will combine the previous steps to use the package 'passwordmeter'. You will use this package to measure the strength of three passwords, and determine how they can be improved.
 
 You will test the following passwords: 
 1: Welcome1234!
@@ -286,42 +330,7 @@ You will test the following passwords:
 To complete this assignemnt you will need to complete the following steps:
 * Install the package 'passwordmeter'
 * Import the package 
-* Calculate the password strenght using the in-built function 'test' using the following syntax: *packagename.function(password)*
-
-
-
-```{code-cell} 
-
-# Install the package
-
-```
-
-
-```{code-cell} 
-
-# Import the package
-
-```
-
-
-```{code-cell} 
-
-# Check the strength of password 1 
-
-```
-
-
-```{code-cell} 
-
-# Check the strength of password 2 
-
-```
-
-
-```{code-cell} 
-
-# Check the strength of password 3
-
+* Calculate the password strenght per password using the in-built function 'test' using the following syntax: *packagename.function(password)*
 ```
 
 ## The End 
