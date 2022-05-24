@@ -72,6 +72,8 @@ XML Developer's Guide - is the content
 An element can contain other elements, such as in the example above. 
 The element *book* contains the elements *author*, *title*, *genre*, *price*, *publish_date*, and *description*
 
+Elements can also be empty, having tags but no content.
+
 ````{admonition} Exercise 
 :class: attention
 Looking at the example XML, what elements does the element *author* contain?
@@ -104,8 +106,6 @@ The element *author* contains the elements *name* and *surname*.
 ```
 ````
 
-Elements can also be empty, having tags but no content.
-
 ### XML Tree
 
 Similar to a real tree, an XML tree starts at a *root element* and branches out into *child elements*.
@@ -120,13 +120,14 @@ The basic structure is this:
 </root>
 ```
 The relation between elements is described with the terms *parent*, *child*, and *sibling*.
-Like family trees, Parents are on the top level, children below parents and siblings are on the same level.
+Like family trees, parents are on the top level, children below parents and siblings are on the same level.
 
 ````{admonition} Exercise 
 :class: attention
 Looking at the example XML,
 1. What is the root element?
 2. Does the element *book* have subchildren?
+3. What are the siblings of *author*?
 ```XML
 <?xml version="1.0"?>
 	<catalog>
@@ -149,6 +150,7 @@ Looking at the example XML,
 :class: tip, dropdown
 1. The root element is the first element of the tree. In this case it is *catalog*.
 2. The element *book* has 2 subchildren, *name* and *surname*.
+3. The siblings of author are: *title*, *genre*, *price*, *publish_date*, and *description*.
 ```
 
 ### Attributes
@@ -159,9 +161,7 @@ Returning to our example XML, the element *book* has an atribute *id*.
 ```XML
 <book id="bk101"> </book>
 ```
-This attribute contains the unique id of the book. This is usefull as there may be books with the same name, and this way these can be identified separately. 
-
-Attribute values are always quoted. 
+This attribute contains the unique id of the book. This is usefull as there may be books with the same name, and this way these can be identified separately. Attribute values are always quoted. 
 
 ### Namespaces *WIP*
 
