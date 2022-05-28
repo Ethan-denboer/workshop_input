@@ -25,7 +25,7 @@ If you have any questions about the course, please contact us via mirjam.cuper@k
 
 
 ### Datasets
-The datasets used in this course have been kindly provided by the KB, National Library of the Netherlands. If you would like to know more about the datasets that are available, or would wish to use them, please contact **dataservices@kb.nl**??
+The datasets used in this course have been kindly provided by the KB, National Library of the Netherlands. If you would like to know more about the datasets that are available, or would wish to use them, please contact dataservices@kb.nl.
 
 
 
