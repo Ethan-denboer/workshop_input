@@ -24,7 +24,7 @@ In the taskbar searchbox, type 'jupyter' and open *jupyter notebook*.
 ```{figure} images/openJupyter.png
 ---
 height: 200px
-name: directive-fig
+name: openJupyter
 ---
 Open Jupyter Notebook.
 ```
@@ -36,7 +36,7 @@ All Notebooks you make will be stored here unless explicitely saved elsewhere or
 ```{figure} /images/JupyterHub.png
 ---
 height: 200px
-name: directive-fig
+name: JupyterHub
 ---
 The Jupyter home or hub where all Notebooks reside.
 ```
@@ -45,7 +45,7 @@ To open a new Python Jupyter Notebook click the **new** button in the topright c
 ```{figure} /images/OpenNotebookOptions.png
 ---
 height: 200px
-name: directive-fig
+name: OpenNotebookOptions
 ---
 Click new and python3 to open a new Notebook.
 ```
@@ -55,7 +55,7 @@ A new tab should open dispaying your new Notebook, usually called *Untitled*
 ```{figure} /images/Notebook.png
 ---
 height: 200px
-name: directive-fig
+name: Notebook
 ---
 Your freshly started Notebook with inspiring name.
 ```
@@ -79,7 +79,7 @@ Text cells are generally used for descriptions and explanations. These cells are
 ```{figure} /images/textcell.png
 ---
 height: 200px
-name: directive-fig
+name: textcell
 ---
 This is a text cell.
 ```
@@ -92,7 +92,7 @@ Code cells are used to write and execute code. In our case Python. When a code c
 ```{figure} /images/codecell.png
 ---
 height: 200px
-name: directive-fig
+name: codecell
 ---
 This is a code cell.
 ```
@@ -104,7 +104,7 @@ The type of a cell can be changed by selecting a cell and either going through t
 ```{figure} /images/celltypeOptions.png
 ---
 height: 200px
-name: directive-fig
+name: celltypeOptions
 ---
 Via this menu you can select the cell tyope.
 ```
@@ -138,7 +138,7 @@ One cell is rarely enough to make a clearly structured Notebook. Adding more cel
 ```{figure} /images/newcell.png
 ---
 height: 200px
-name: directive-fig
+name: newcell
 ---
 Click the + to add a new cell directly below the selected one
 ```
@@ -150,7 +150,7 @@ Another way is to use the menu 'Insert', where the choice is given between addin
 ```{figure} /images/newcellmenu.png
 ---
 height: 200px
-name: directive-fig
+name: newcellmenu
 ---
 In this menu you can add a new cell above or below.
 ```
@@ -641,6 +641,7 @@ Type the code below in a cell in your Notebook and run the cell
 !pip install WordCloud
 !pip install matplotlib
 ```
+
 ```{note}
 The exclamation mark before *pip* is needed to activate *pip* within the Notebook enviroment. When installing from the command line this is not needed.
 ```
