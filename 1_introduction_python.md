@@ -20,16 +20,43 @@ It consists of explanation followed by pratical exercises. To get the most out o
 ## Notebooks
 First, lets start up Jupyter and open a Notebook.
 In the taskbar searchbox, type 'jupyter' and open *jupyter notebook*.
+
+```{image} ../xml-workshop/images/openJupyter.png
+:alt: open Jupyter
+:class: bg-primary mb-1
+:width: 300px
+:align: left
+```
 This should open a tab in your browser with the jupyter hub in the installation folder. 
 This folder will act as your home folder for jupyter.
 All Notebooks you make will be stored here unless explicitely saved elsewhere or moved.
 
+```{image} ../xml-workshop/images/JupyterHub.png
+:alt: open Jupyter
+:class: bg-primary mb-1
+:width: 300px
+:align: left
+```
 To open a new Python Jupyter Notebook click the **new** button in the topright corner and select **python3** from the dropdown list.
+
+```{image} ../xml-workshop/images/OpenNotebookOptions.png
+:alt: open Jupyter
+:class: bg-primary mb-1
+:width: 300px
+:align: left
+```
+
 A new tab should open dispaying your new Notebook, usually called *Untitled*
+
+```{image} ../xml-workshop/images/Noteboook.png
+:alt: open Jupyter
+:class: bg-primary mb-1
+:width: 300px
+:align: left
+```
 
 Notebooks can be renamed by clicking on the name and typing a different name. It is best to make these names descriptive so they are still recognizable after a while. 
 
-**To add:** screenshots 
 
 ## How does a Notebook work?
 

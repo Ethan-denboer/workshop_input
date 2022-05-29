@@ -19,6 +19,7 @@ Although XML is a structured way to store data, the structuring itself is left t
 
 In humanities research multiple standards are in use. In this chapter we will shortly describe some of the standards that are commonly used within the KB, national library of the Netherlands, and will be used in this workshop.
 
+
 ## Alto
 ALTO (Analyzed Layout and Text Object) is an open XML Schema developed by the EU-funded project called METAe. The standard was developed for the description of text OCR and layout information of pages for digitized material. The goal of this standard was to describe the layout and text in such a way that it would enable the reconstruction of the original appearance. 
 ALTO is often used with a metadata encoding file for the description of the whole digitized object and for creating references across mulitple ALTO files, such as reading order description. Commenly used files are Didl and METS.
@@ -34,3 +35,12 @@ The MPEG-21 Digital Item Declaration Language, Didl uses set of abstract concept
 The Text Encoding Initiative (TEI) is a non-profit consortium which collectively develops and maintains a standard for the representation of texts in digital form. They have developed a set of Guidelines which specify encoding methods for machine-readable texts, moestly focused on the humanities, social sciences and linguistics. The TEI Guidelines are widely used by libraries, museums, publishers, and individual scholars to present texts for online research, teaching, and preservation. 
 
 The TEI Consortium is a non-profit membership organization composed of academic institutions, research projects, and individual scholars from around the world. 
+
+## PAGE
+PAGE has been designed to support the individual stages of the workflow of document image analysis methods (from document image enhancement to layout analysis to OCR) and their evaluation. PAGE is an image representation framework that not only records layout structure and page content, but information on image characteristics such as image borders, distortions and corresponding corrections, etc. 
+It is used extensively in public contemporary and historical ground-truthed datasets and in the ICDAR Page Segmentation competition series.
+
+
+
+
+
